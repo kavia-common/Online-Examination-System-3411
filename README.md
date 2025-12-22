@@ -1,56 +1,48 @@
 # Online Examination System (ASP.NET Web Forms)
 
 ## Overview and Purpose
-The Online Examination System is a monolithic ASP.NET Web Forms application that enables teachers to create and manage exams and allows students to register, take exams (MCQ and theory), and view results. It leverages SQL Server for persistence and Bootstrap for styling, offering administrative features such as leaderboards, exam configuration, question management, and queues for theory answer evaluation.
+The Online Examination System is a monolithic ASP.NET Web Forms application that enables educators to create and manage examinations and allows students to register, take exams (MCQ and theory), and view results. The system uses SQL Server for persistence and Bootstrap for styling. Administrative features include leaderboards, exam configuration, question management, and queues for theory answer evaluation.
 
 This README serves as the primary Code Document and entry point to the detailed documentation under the docs/ directory.
 
-- Detailed docs index: see docs/ directory:
-  - docs/InlineComments.md
-  - docs/DocstringsGuide.md
-  - docs/ProjectStructure.md
-  - docs/Configuration.md
-  - docs/Interfaces.md
-  - docs/Contributing.md
-  - docs/Architecture.md
+- Documentation Index: docs/README.md
 
 ## Features
-The system includes the following features (as implemented in the project’s Web Forms pages):
-- User authentication and registration via LoginPage.aspx and SignUpPage.aspx
-- Student dashboard (Dashboard.aspx) showing navigation to profile, leaderboard, start exam, etc.
-- StartExam flow (StartExam.aspx) with course selection filtered by semester and checks for taken exams
-- Multiple Choice (MCQ) exams (MCQExam.aspx) with session-based timing and answer submission
-- Theory exams (TheoryExam.aspx) with timers and typed answers
+The application provides the following capabilities as implemented by the Web Forms pages:
+- Authentication and registration via LoginPage.aspx and SignUpPage.aspx
+- Student dashboard (Dashboard.aspx) with navigation to profile, leaderboard, and exam actions
+- StartExam flow (StartExam.aspx) with course selection (filtered by semester) and checks for already-taken exams
+- Multiple Choice exams (MCQExam.aspx) with timers and answer submission
+- Theory exams (TheoryExam.aspx) with timers and free-text answers
 - Results page (ExamResult.aspx) with scoring and profile updates
-- Leaderboard (Leaderboard.aspx) for viewing performance
-- Admin panel (AdminPanel.aspx) for:
-  - Creating/editing exams (SetExam.aspx, EditExam.aspx, EditMCQ.aspx, EditTheory.aspx, MCQSet.aspx, TheorySet.aspx)
-  - Managing queues for theory answer evaluation (AdminCourseQueue.aspx/AdminQueue.aspx, ShowAns.aspx)
-  - Viewing admin leaderboard (AdminLeaderboard.aspx)
-- PDF download stub (DownloadPdf.aspx) for results (implementation placeholder in code-behind)
+- Leaderboard pages (Leaderboard.aspx, AdminLeaderboard.aspx)
+- Administrative panel (AdminPanel.aspx) for:
+  - Creating and editing exams (SetExam.aspx, EditExam.aspx, EditMCQ.aspx, EditTheory.aspx, MCQSet.aspx, TheorySet.aspx)
+  - Managing queues for theory answer evaluation (AdminCourseQueue.aspx, AdminQueue.aspx) and viewing answers (ShowAns.aspx)
+- PDF result download placeholder (DownloadPdf.aspx)
 - Styling via Bootstrap CSS (CSS/bootstrap.css)
-- SQL Server persistence via Web.config connectionStrings
+- SQL Server persistence configured in Web.config connectionStrings
 
 ## Supported Platforms and Versions
-- ASP.NET Web Forms on .NET Framework 4.8
-- SQL Server (SQL Server Express is acceptable)
-- Visual Studio with IIS Express
-- Bootstrap (version in repository: CSS/bootstrap.css; exact upstream version not specified)
+- ASP.NET Web Forms targeting .NET Framework 4.8 (compilation target per OnlineExamSystem/Web.config)
+- SQL Server or SQL Server Express
+- Visual Studio (2019 or later recommended) with IIS Express
+- Bootstrap (included as CSS/bootstrap.css within the project)
 
 ## Installation (Windows)
-1) Prerequisites
-- Windows 10/11
-- Visual Studio (recommended 2019 or later with .NET Framework development workload)
+1) Prerequisites  
+- Windows 10/11  
+- Visual Studio with .NET Framework development workload (2019 or newer recommended)  
 - SQL Server or SQL Server Express and SQL Server Management Studio (SSMS)
 
-2) Database Setup
-- Open the script at: database-script/Online-Examination-System-Databse-Script.sql
-- Execute it in SQL Server to create the necessary database schema and seed data (if included).
-- Note the resulting database name and server instance for use in connection strings.
+2) Database Setup  
+- Open: database-script/Online-Examination-System-Databse-Script.sql  
+- Execute the script in SQL Server to create the database schema and seed data (if provided).  
+- Record the database name and server instance for connectionStrings.
 
-3) Configure Connection Strings
-- File: OnlineExamSystem/Web.config
-- Update the values under <connectionStrings>:
+3) Configure Connection Strings  
+- File: OnlineExamSystem/Web.config  
+- Update the <connectionStrings> entries:
   - dbconnection
   - OnlineExamConnectionString
 - Example:
@@ -59,59 +51,64 @@ The system includes the following features (as implemented in the project’s We
     <add name="OnlineExamConnectionString" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=OnlineExamDB;Integrated Security=True" providerName="System.Data.SqlClient" />
   </connectionStrings>
 
-Note: Web.Debug.config and Web.Release.config are present for transform-based deployment. Ensure transforms are configured if you use publish profiles.
+Notes:
+- Web.Debug.config and Web.Release.config are provided for transform-based deployment. Adjust transforms if you create publish profiles.
+- In Web.config, compilation targets .NET Framework 4.8 while httpRuntime targetFramework is 4.5.2; this configuration is supported for the project as-is.
 
-4) Restore Packages
-- The project references Microsoft.CodeDom.Providers.DotNetCompilerPlatform and Microsoft.Net.Compilers via packages/ folder.
-- If needed, open the solution in Visual Studio and allow NuGet to restore packages.
+4) Restore Packages  
+- Open the solution in Visual Studio and allow NuGet to restore packages as needed.  
+- The repository includes Microsoft.CodeDom.Providers.DotNetCompilerPlatform and Microsoft.Net.Compilers under packages/.
 
 ## Setup and Configuration
 - Web.config:
-  - Ensure <compilation debug="true" targetFramework="4.8" />
-  - Ensure httpRuntime targetFramework is compatible (4.5.2 shown; compilation is 4.8).
+  - Confirm <compilation debug="true" targetFramework="4.8" />
+  - Confirm <httpRuntime targetFramework="4.5.2" />
   - Set connectionStrings as described above.
-- Bootstrap reference:
-  - CSS/bootstrap.css is included and referenced from pages. Update or replace as needed.
+- Bootstrap:
+  - CSS/bootstrap.css is bundled and referenced by pages. Replace or upgrade if desired.
 
-## Running the Application
-- Visual Studio (IIS Express):
+## How to Run
+- Run with Visual Studio (IIS Express):
   - Open Online-Examination-System-3411/OnlineExamSystem.sln
-  - Set OnlineExamSystem as the startup project (it is a Web Application)
-  - Press F5 to run with IIS Express; Visual Studio will bind to a local port
-- IIS Deployment Notes:
+  - Set OnlineExamSystem as the startup project
+  - Press F5 to launch with IIS Express; Visual Studio assigns a local port
+- Deploy to IIS:
   - Publish from Visual Studio using a publish profile
-  - Ensure application pool targets .NET Framework 4.x and that the site/application has required DB access
-  - Configure connection strings via Web.config or Web.config transforms for Production
+  - Ensure the application pool targets .NET Framework 4.x
+  - Grant the site/application appropriate database access
+  - Configure production connectionStrings in Web.config or via transforms
+- Port note:
+  - Some meta documentation may reference port 3001 for previews. In local IIS Express, the port is auto-assigned unless you configure it.
 
-Note: The preview environment referenced in meta documentation uses port 3001; in local IIS Express, Visual Studio will auto-assign a port unless configured otherwise.
-
-## Basic Usage
-- Login:
-  - Navigate to LoginPage.aspx and log in as Student or Teacher/Admin (create accounts via SignUpPage.aspx if needed)
-- Start Exam:
-  - From Dashboard.aspx, click Start Exam to open StartExam.aspx
-  - Select course and exam type (MCQ or Theory) and begin
-- MCQ Navigation:
-  - MCQExam.aspx presents questions with options; submit answers within the timer
-- Theory Navigation:
-  - TheoryExam.aspx allows entering free-text answers; submit within the timer
-- Admin Create/Edit Exam:
-  - AdminPanel.aspx → SetExam.aspx to configure an exam
-  - EditExam.aspx → EditMCQ.aspx / EditTheory.aspx to modify existing questions
-  - Use MCQSet.aspx and TheorySet.aspx for creating question sets
-- Results and Leaderboard:
-  - ExamResult.aspx shows outcome; Leaderboard.aspx displays performance standings
-  - Admins can view AdminLeaderboard.aspx
+## Basic Usage Examples
+- Student sign-up and login:
+  - Navigate to SignUpPage.aspx to create an account, then log in via LoginPage.aspx
+- Starting an exam:
+  - From Dashboard.aspx choose Start Exam to open StartExam.aspx, select a course/exam type (MCQ or Theory), and begin
+- Taking an MCQ:
+  - Use MCQExam.aspx to select answers within the allotted time and submit
+- Taking a Theory exam:
+  - Use TheoryExam.aspx to enter free-text responses within the timer and submit
+- Viewing results and leaderboards:
+  - Visit ExamResult.aspx for scores and Leaderboard.aspx for standings
+- Admin workflows:
+  - AdminPanel.aspx → SetExam.aspx to create an exam
+  - EditExam.aspx → EditMCQ.aspx / EditTheory.aspx to modify questions
+  - Use MCQSet.aspx and TheorySet.aspx to build question sets
+  - Manage theory evaluation queues via AdminCourseQueue.aspx/AdminQueue.aspx and review answers on ShowAns.aspx
 
 ## License
-- A LICENSE file exists in the repository. If the exact license terms need adjustment, consider MIT or another OSI license and update LICENSE accordingly.
-- If no final decision is made, treat current LICENSE as authoritative and update this README after confirmation.
+This project is licensed under the MIT License. See LICENSE for full text and attribution.
 
 ## Documentation Links
-- Inline code comments guidance: docs/InlineComments.md
-- C# XML doc comments standard: docs/DocstringsGuide.md
-- Project structure overview: docs/ProjectStructure.md
-- Configuration & environment: docs/Configuration.md
-- UI pages and interfaces: docs/Interfaces.md
-- Contributing & extension: docs/Contributing.md
-- Architecture & flows: docs/Architecture.md
+Start with the documentation index:
+- docs/README.md
+
+Additional topic references:
+- docs/Architecture.md
+- docs/Configuration.md
+- docs/Interfaces.md
+- docs/ProjectStructure.md
+- docs/InlineComments.md
+- docs/DocstringsGuide.md
+- docs/Contributing.md
