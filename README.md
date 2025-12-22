@@ -104,8 +104,11 @@ This project is licensed under the MIT License. See LICENSE for full text and at
 Start with the documentation index:
 - docs/README.md
 
+Architecture:
+- Detailed architecture, system context, and data flows: docs/Architecture.md
+- Standalone Mermaid diagram file: docs/diagrams/architecture.mmd
+
 Additional topic references:
-- docs/Architecture.md
 - docs/Configuration.md
 - docs/Interfaces.md
 - docs/ProjectStructure.md

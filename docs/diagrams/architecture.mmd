@@ -1,0 +1,72 @@
+%% Standalone architecture diagram for the Online Examination System (ASP.NET Web Forms)
+%% This file can be opened in Mermaid-compatible viewers or embedded in documentation.
+
+flowchart LR
+    subgraph Browser["Browser"]
+        LoginUI["LoginPage.aspx"]
+        DashboardUI["Dashboard.aspx"]
+        StartExamUI["StartExam.aspx"]
+        MCQUI["MCQExam.aspx"]
+        TheoryUI["TheoryExam.aspx"]
+        ResultUI["ExamResult.aspx"]
+        AdminPanelUI["AdminPanel.aspx"]
+    end
+
+    subgraph Server["ASP.NET Web Forms (Code-behind)"]
+        LoginCB["LoginPage.aspx.cs"]
+        DashboardCB["Dashboard.aspx.cs"]
+        StartExamCB["StartExam.aspx.cs"]
+        MCQCB["MCQExam.aspx.cs"]
+        TheoryCB["TheoryExam.aspx.cs"]
+        ResultCB["ExamResult.aspx.cs"]
+        AdminCB["AdminPanel.aspx.cs"]
+        State["Session / ViewState"]
+        Cfg["Web.config (compilation/httpRuntime/connectionStrings)"]
+    end
+
+    subgraph Database["SQL Server"]
+        UserInfo["userInfo"]
+        McqQS["mcqQS"]
+        McqTaken["mcqTaken"]
+        TheoryQS["theoryQS"]
+        TheoryAns["theoryAns"]
+        TheoryTaken["theoryTaken"]
+        TheoryCourseQueue["theoryCourseQueue"]
+        TheoryQueue["theoryQueue"]
+    end
+
+    LoginUI --> LoginCB
+    DashboardUI --> DashboardCB
+    StartExamUI --> StartExamCB
+    MCQUI --> MCQCB
+    TheoryUI --> TheoryCB
+    ResultUI --> ResultCB
+    AdminPanelUI --> AdminCB
+
+    Cfg --> LoginCB
+    Cfg --> StartExamCB
+    Cfg --> MCQCB
+    Cfg --> TheoryCB
+    Cfg --> ResultCB
+    Cfg --> AdminCB
+
+    LoginCB --> UserInfo
+    LoginCB --> State
+
+    StartExamCB --> UserInfo
+    StartExamCB --> McqQS
+    StartExamCB --> TheoryQS
+    StartExamCB --> State
+
+    MCQCB --> McqQS
+    MCQCB --> State
+    MCQCB --> McqTaken
+
+    TheoryCB --> TheoryQS
+    TheoryCB --> State
+    TheoryCB --> TheoryAns
+    TheoryCB --> TheoryCourseQueue
+    TheoryCB --> TheoryQueue
+    TheoryCB --> TheoryTaken
+
+    ResultCB --> UserInfo
