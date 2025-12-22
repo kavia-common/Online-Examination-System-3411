@@ -1516,3 +1516,176 @@
 2025-12-22 07:04:32,897 - Knowledge - INFO - ⚡ Total Redis path: 1.28s (vs ~300s from disk)
 2025-12-22 07:04:33,135 - Knowledge - INFO - Saving knowledge to Redis...
 2025-12-22 07:04:33,351 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-12-22 07:33:15,764 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-12-22 07:33:16,105 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-12-22 07:33:16,260 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-12-22 07:33:16,422 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2025-12-22 07:33:17,552 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-12-22 07:33:17,738 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-12-22 07:33:17,905 - Knowledge - INFO - load persisted knowledge: begin
+2025-12-22 07:33:18,087 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:18,260 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:18,410 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/Properties/AssemblyInfo.cs
+2025-12-22 07:33:18,607 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:18,759 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:18,931 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminLeaderboard.aspx.cs
+2025-12-22 07:33:19,164 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:19,348 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:19,505 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminCourseQueue.aspx.designer.cs
+2025-12-22 07:33:19,671 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:19,855 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:20,027 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminQueue.aspx.cs
+2025-12-22 07:33:20,191 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:20,350 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:20,508 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TheorySet.aspx.designer.cs
+2025-12-22 07:33:20,681 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:20,854 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:21,018 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditMCQ.aspx.designer.cs
+2025-12-22 07:33:21,216 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:21,367 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:21,599 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/LoginPage.aspx.cs
+2025-12-22 07:33:21,738 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:21,889 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:22,074 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/database-script/Online-Examination-System-Databse-Script.sql
+2025-12-22 07:33:22,252 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:22,422 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:22,579 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TheoryExam.aspx.cs
+2025-12-22 07:33:22,746 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:22,900 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:23,085 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TakenCourses.aspx.designer.cs
+2025-12-22 07:33:23,251 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:23,466 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:23,622 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/SetExam.aspx.designer.cs
+2025-12-22 07:33:23,802 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:23,960 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:24,097 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/ShowAns.aspx.designer.cs
+2025-12-22 07:33:24,288 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:24,457 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:24,630 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/SignUpPage.aspx.designer.cs
+2025-12-22 07:33:24,777 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:24,932 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:25,137 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/DownloadPdf.aspx.cs
+2025-12-22 07:33:25,361 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:25,538 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:25,689 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/ExamResult.aspx.cs
+2025-12-22 07:33:25,853 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:26,045 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:26,207 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditTheory.aspx.designer.cs
+2025-12-22 07:33:26,370 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:26,527 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:26,679 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditExam.aspx.designer.cs
+2025-12-22 07:33:26,836 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:27,021 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:27,181 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/UserProfile.aspx.cs
+2025-12-22 07:33:27,340 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:27,519 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:27,680 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/Dashboard.aspx.cs
+2025-12-22 07:33:27,840 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:27,989 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:28,171 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/StartExam.aspx.designer.cs
+2025-12-22 07:33:28,316 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:28,479 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:28,695 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminPanel.aspx.designer.cs
+2025-12-22 07:33:28,884 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:29,069 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:29,236 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+2025-12-22 07:33:29,449 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:29,636 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:29,820 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/Leaderboard.aspx.designer.cs
+2025-12-22 07:33:29,977 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:30,173 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:30,369 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/MCQSet.aspx.designer.cs
+2025-12-22 07:33:30,588 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:30,771 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:30,951 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/MCQExam.aspx.cs
+2025-12-22 07:33:31,129 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:31,341 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:31,501 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminCourseQueue.aspx.cs
+2025-12-22 07:33:31,652 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:31,810 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:32,003 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/CSS/bootstrap.css
+2025-12-22 07:33:32,183 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:32,357 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:32,519 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/UserProfile.aspx.designer.cs
+2025-12-22 07:33:32,698 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:32,892 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:33,064 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/Dashboard.aspx.designer.cs
+2025-12-22 07:33:33,263 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:33,424 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:33,613 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TakenCourses.aspx.cs
+2025-12-22 07:33:33,825 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:33,998 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:34,193 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/SetExam.aspx.cs
+2025-12-22 07:33:34,366 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:34,531 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:34,681 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditMCQ.aspx.cs
+2025-12-22 07:33:34,834 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:35,001 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:35,211 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TheorySet.aspx.cs
+2025-12-22 07:33:35,377 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:35,530 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:35,684 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/ShowAns.aspx.cs
+2025-12-22 07:33:35,847 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:36,018 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:36,179 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/SignUpPage.aspx.cs
+2025-12-22 07:33:36,344 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:36,499 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:36,636 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/README.md
+2025-12-22 07:33:36,800 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:36,958 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:37,112 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/MCQExam.aspx.designer.cs
+2025-12-22 07:33:37,258 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:37,419 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:37,582 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/database-script/README.md
+2025-12-22 07:33:37,751 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:37,934 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:38,115 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/DownloadPdf.aspx.designer.cs
+2025-12-22 07:33:38,307 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:38,476 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:38,658 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditExam.aspx.cs
+2025-12-22 07:33:38,815 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:38,988 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:39,148 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/EditTheory.aspx.cs
+2025-12-22 07:33:39,331 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:39,527 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:39,710 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/StartExam.aspx.cs
+2025-12-22 07:33:39,859 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:40,073 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:40,276 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminPanel.aspx.cs
+2025-12-22 07:33:40,472 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:40,663 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:40,822 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/ExamResult.aspx.designer.cs
+2025-12-22 07:33:40,995 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:41,187 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:41,340 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/LoginPage.aspx.designer.cs
+2025-12-22 07:33:41,526 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:41,680 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:41,813 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/TheoryExam.aspx.designer.cs
+2025-12-22 07:33:41,999 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:42,167 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:42,321 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/Leaderboard.aspx.cs
+2025-12-22 07:33:42,517 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:42,703 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:42,859 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminQueue.aspx.designer.cs
+2025-12-22 07:33:43,025 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:43,202 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:43,372 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/AdminLeaderboard.aspx.designer.cs
+2025-12-22 07:33:43,530 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/Online-Examination-System-3411.git:kavia-master
+2025-12-22 07:33:43,701 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7fcac934c110>
+2025-12-22 07:33:43,924 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/1907/b3286zc/Online-Examination-System-3411/OnlineExamSystem/MCQSet.aspx.cs
+2025-12-22 07:33:44,134 - Knowledge - INFO - Loaded 50 files from persisted knowledge
+2025-12-22 07:33:44,297 - Knowledge - INFO - load persisted knowledge: end
+2025-12-22 07:33:44,617 - Knowledge - INFO - Redis support added with prefix knowledge:b3286zc:
+2025-12-22 07:33:45,030 - Knowledge - INFO - Starting knowledge initialization for ID: I530bo-b3286zc
+2025-12-22 07:33:45,229 - Knowledge - INFO - 🔍 Checking Redis for build_id: b3286zc
+2025-12-22 07:33:45,442 - Knowledge - INFO - 🔍 Full session ID: I530bo-b3286zc
+2025-12-22 07:33:45,582 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b3286zc:
+2025-12-22 07:33:45,773 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-12-22 07:33:45,926 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-12-22 07:33:46,066 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b3286zc
+2025-12-22 07:33:46,253 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-12-22 07:33:46,396 - Knowledge - INFO - ✅ Successfully loaded from Redis: 50 files
+2025-12-22 07:33:46,592 - Knowledge - INFO - ✅ Redis load complete: 50 files in 0.82s
+2025-12-22 07:33:46,785 - Knowledge - INFO - ⚡ Total Redis path: 0.82s (vs ~300s from disk)
+2025-12-22 07:33:47,007 - Knowledge - INFO - Saving knowledge to Redis...
+2025-12-22 07:33:47,274 - Knowledge - INFO - Knowledge saved to Redis successfully
